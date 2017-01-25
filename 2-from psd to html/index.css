@@ -1,0 +1,209 @@
+.index-banner {
+	position: relative;
+	background-color: #b3b3b3;
+}
+/*不出现横向滚动条*/
+.index-banner-bg {
+	height: 570px;
+	overflow: hidden;
+}
+/*绝对定位*/
+.index-banner-text {
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left: -388px;/*这个用的机智*/
+}
+.index-banner-text .text-logo{
+	width: 776px;
+	height: 113px;
+	background: url("../image/index-banner-textlogo.png") no-repeat;/*两个点*/
+}
+.index-banner-text .text-info {
+	margin-top: 17px;
+	text-align: center;
+	color: #fff;
+}
+.index-banner-text .text-info .line {
+	display: inline-block;/*将对象呈现为inline对象，但是对象的内容作为block对象呈现*/
+	width: 40px;
+	border-top: 1px solid #fff;
+}
+.index-banner-text .text-info .line-l {
+	margin-right: 26px;
+}
+.index-banner-text .text-info .line-r {
+	margin-left: 26px;
+}
+
+.index-menu {
+	position: relative;
+	border-top: 4px solid #f34949;
+}
+.index-menu .menu-tips {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -78px;
+	width: 156px;
+	height: 75px;
+	text-align: center;
+	line-height: 65px;
+	color: #fff;
+	background-color: #f34949;
+}
+.index-menu .menu-tips:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-left: 78px solid transparent;
+	border-right: 78px solid transparent;
+	border-bottom: 10px solid #fff;
+}
+
+.index-menu .menu-list {
+	margin-top: 150px;
+	color: #555;
+	overflow: hidden;
+}
+.index-menu .menu-list ul {
+	width: 1160px;
+}
+.index-menu .menu-list li {
+	list-style-type: none;
+}
+.index-menu .menu-item {
+	float: left;
+	width: 520px;
+	margin-right: 60px;
+	margin-bottom: 56px;
+}
+.index-menu .menu-item .title {
+	float: left;
+	width: 230px;
+	white-space: nowrap;/*不进行换行*/
+	text-overflow: ellipsis;/*溢出文本显示省略号*/
+}
+.index-menu .menu-item .comment {
+	margin-top: 4px;
+	color: #b7b7b7;
+	font-size: 12px;
+}
+.index-menu .menu-item .line {
+	margin-top: 10px;
+	float: left;
+	width: 192px;
+	border-top: 1px solid #e3e1e1;
+}
+.index-menu .menu-item .price {
+	float: right;	
+}
+.index-menu .menu-more-btn {
+	margin: 0 auto;
+	width: 114px;
+	height: 32px;
+	padding-left:16px;
+	border: 1px solid #d7d5d5;
+	font-size: 14px;
+	line-height: 32px;
+	color: #b7b7b7;
+}
+.index-menu .menu-more-btn span {
+	margin-left: 10px;
+}
+.index-menu .menu-more-btn .icon {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border: 8px solid;
+	vertical-align: middle;
+	margin-top: 5px;
+	border-color: #b7b7b7 transparent transparent transparent;
+}
+.index-pannel {
+	margin-top: 200px;
+}
+.index-pannel-header {}
+.index-pannel-header h3 {
+	font-size: 20px;
+	color: #3b3b3b;
+	font-weight: normal;
+	float: left;
+	margin-right: 48px;
+}
+.index-pannel-header .line{
+	float: left;
+	width: 200px;
+	border-top: 1px solid #e5e3e3;
+	margin-top: 10px;
+}
+.index-pannel-header .btn-group{
+	font-size: 0;
+	float: right;
+}
+.index-pannel-header .btn{
+	display: inline-block;
+	margin-left: 11px;
+	width: 9px;
+	height: 9px;
+	background: #dedede;
+	border-radius: 50%;
+}
+.index-pannel-header .active{
+	background: #9b9b9b;
+}
+.index-pannel-content {
+	margin-top: 75px;
+}
+
+.index-content-list ul{
+	width: 1160px;
+}
+
+.index-content-list .food-item {
+	float: left;
+	width: 230px;
+	margin-right: 60px;
+}
+.index-content-list .food-item .banner {
+	margin-bottom: 30px;
+	height: 202px;
+}
+.index-content-list .food-item .name {
+	color: #555;
+	margin-bottom: 10px;
+}
+.index-content-list .food-item .star-bar {
+	font-size: 0;
+}
+.index-content-list .food-item .price {
+	float: right;
+}
+.index-content-list .food-item .star {
+	display: inline-block;
+	width: 12px;
+	height: 13px;
+	margin-right: 5px;
+	background-image: url("../image/index-star.png");
+	background-repeat: no-repeat;
+}
+.index-pics{
+	height: 380px;
+	overflow: hidden;
+}
+.index-pics .pic-col {
+	float: left;
+}
+.index-pics .pic-col-m {
+	width: 353px;
+}
+.index-pics .pic-col-s {
+	width: 287px;
+}
+.index-pics .pic-col-l {
+	width: 460px;
+}
