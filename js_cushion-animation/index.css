@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+}
+
+/*清除浮动*/
+.clearfloat {
+	zoom:1;
+}
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+
+#container_1 {
+	width: 240px;
+	height: 200px;
+	border: 1px solid #ccc;
+	position: relative;
+	left: -200px;
+
+}
+
+#container_1 #con_1_l {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(239,206,262);
+	float: left;
+}
+
+#container_1 #con_1_r {
+	width: 40px;
+	height: 80px;
+	background-color: rgb(243,215,181);
+	float: left;
+	margin-top: 60px;
+}
