@@ -1,0 +1,26 @@
+body {
+	margin: 0;
+}
+
+/*清除浮动*/
+.clearfloat {
+	zoom:1;
+}
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+
+#container_1 {
+	width: 200px;
+	height: 100px;
+	background-color: rgb(55,105,86);
+	opacity: 0.3;
+	/*所以浏览器都支持*/
+	filter: alpha(opacity=30);
+	/*//ie8以及更早的版本*/
+	border: 1px solid #ccc;
+}
