@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+}
+
+#first {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(121,89,213);
+	border: 2px solid #000;
+	margin: 20px 0 0 20px;
+}
+
+#second {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(89,121,213);
+	border: 2px solid #000;
+	margin: 20px 0 0 20px;
+}

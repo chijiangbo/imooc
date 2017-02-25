@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>js链式动画</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js"></script>
+	<script>
+		window.onload = function(){
+
+			var div_1 = document.getElementById('text');
+			div_1.timer = null;
+			div_1.onmouseover = function(){
+				startMove (div_1,'width',400,function(){
+					startMove (div_1,'height',200,function(){});
+				});
+			};
+
+			div_1.onmouseout = function(){
+				startMove (div_1,'height',100,function(){
+					startMove (div_1,'width',200,function(){});
+				});
+			};
+}
+
+	</script>
+</head>
+<body>
+	<div id="text"></div>
+</body>
+</html>
