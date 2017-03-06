@@ -1,0 +1,208 @@
+<!-- 
+学习一
+banner的制作 position overflow ul li 
+学习二
+下拉菜单的制作 position absolute relative
+学习三
+dl dt dd 的使用
+学习四
+span i a 利用他们制作小图标的方法 display width heigth
+学习五
+input的默认样式的重置 border padding
+学习六
+class的命名规则 bar nav item list title left right
+学习七
+当前项样式的制作 .active{}
+学习八
+一些公共样式的利用 以前没这个意识
+学习九
+代码规范，注释的必须性
+学习十
+页面整体模块的分析和划分
+学习十一
+图片的命名，用当前的class icon文件夹 banner文件夹
+ -->
+<!DOCTYPE html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style/reset.css" type="text/css" rel="stylesheet" />
+<link href="style/index.css" type="text/css" rel="stylesheet" />
+<title>ds_2</title>
+<!-- <script>
+	window.onload = function() {
+		var str = document.getElementsByTagName('input');
+		alert(str[0].getAttribute("style"));
+	}
+</script> -->
+</head>
+
+<body>
+	<!-- header -->
+	<div class="header">
+		<!-- headerTop -->
+    	<div class="headerTop comWidth clearfloat">
+    		<!-- topLeft -->
+    		<div class="topLeft">
+    			<span></span>
+    			<a href="#">收藏本站</a>
+    		</div>
+    		<!-- Topright -->
+    		<div class="topRight">
+    			<a href="#">欢迎来到慕课网</a>
+    			<a href="#">[登录]</a>
+    			<a href="#">[免费注册]</a>
+    		</div>
+    	</div>
+    	<!-- headerMid -->
+        <div class="headerMid">
+	        <div class="comWidth clearfloat">
+	        	<!-- midLogo -->
+	        	<div class="midLogo"></div>
+	        	<!-- midSearch -->
+	        	<div class="midSearch">
+	        		<input type="text" class="midSearch-text" name="search">
+	        		<input type="button" class="midSearch-btn" name="button" value="搜索">
+	        	</div>
+	        	<!-- midShop -->
+	        	<div class="midShop">
+	        		<div class="shopCar">
+	        			<a href=""></a> <!-- 用a制作小图标 -->
+	        			<span>购物车</span>
+	        		</div>
+	        		<div class="shopNum">
+	        			<span>0</span>
+	        			<a href=""></a>  <!-- 用a制作小图标 -->
+	        		</div>
+	        	</div>
+	        </div>
+        </div>
+        <!-- headerBot -->
+        <div class="headerBot clearfloat">
+	        <div class="comWidth">
+	        	<!-- shopList -->
+	        	<div class="shopList">
+	        		<!-- listTil -->
+	        		<div class="listTil">
+	        			<a href="">全部商品分类</a><span></span>
+	        		</div>
+	        		<!-- listItem -->
+	        		<div class="listItem ">
+	        			<dl class="listItems listItems_avtived">
+	        				<dt class="clearfloat">
+	        					<a href="">手机</a><a href="#">数码</a><a href="#">合约机</a><span></span>
+	        				</dt>
+	        				<dd>
+	        					<a href="">荣耀3X</a><a href="">单反</a><a href="">智能设备</a>
+	        				</dd>
+	        			</dl>
+	        			<dl class="listItems">
+	        				<dt class="clearfloat">
+	        					<a href="">手机</a><a href="#">数码</a><a href="#">合约机</a><span></span>
+	        				</dt>
+	        				<dd>
+	        					<a href="">荣耀3X</a><a href="">单反</a><a href="">智能设备</a>
+	        				</dd>
+	        			</dl>
+	        			<dl class="listItems">
+	        				<dt class="clearfloat">
+	        					<a href="">手机</a><a href="#">数码</a><a href="#">合约机</a><span></span>
+	        				</dt>
+	        				<dd>
+	        					<a href="">荣耀3X</a><a href="">单反</a><a href="">智能设备</a>
+	        				</dd>
+	        			</dl>
+	        			<dl class="listItems">
+	        				<dt class="clearfloat">
+	        					<a href="">手机</a><a href="#">数码</a><a href="#">合约机</a><span></span>
+	        				</dt>
+	        				<dd>
+	        					<a href="">荣耀3X</a><a href="">单反</a><a href="">智能设备</a>
+	        				</dd>
+	        			</dl>
+	        			<dl class="listItems">
+	        				<dt class="clearfloat">
+	        					<a href="">手机</a><a href="#">数码</a><a href="#">合约机</a><span></span>
+	        				</dt>
+	        				<dd>
+	        					<a href="">荣耀3X</a><a href="">单反</a><a href="">智能设备</a>
+	        				</dd>
+	        			</dl>
+	        		</div>
+	        		<!-- itemItem -->
+	        		<div class="big-itemItem ">
+		        		<div class="itemItem clearfloat">
+		        			<dl>
+		        				<dt><a href="">数码城</a></dt>
+		        				<dd><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a></dd>
+		        			</dl>
+		        		</div>
+		        		<div class="itemItem clearfloat">
+		        			<dl>
+		        				<dt><a href="">数码城</a></dt>
+		        				<dd><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a></dd>
+		        			</dl>
+		        		</div>
+		        		<div class="itemItem clearfloat">
+		        			<dl>
+		        				<dt><a href="">数码城</a></dt>
+		        				<dd><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a></dd>
+		        			</dl>
+		        		</div>
+		        		<div class="itemItem clearfloat">
+		        			<dl>
+		        				<dt><a href="">数码城</a></dt>
+		        				<dd><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a></dd>
+		        			</dl>
+		        		</div>
+		        		<div class="itemItem clearfloat">
+		        			<dl>
+		        				<dt><a href="">数码城</a></dt>
+		        				<dd><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a></dd>
+		        			</dl>
+		        		</div>
+		        		<div class="itemItem clearfloat">
+		        			<dl>
+		        				<dt><a href="">数码城</a></dt>
+		        				<dd><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a><a href="">数码城</a></dd>
+		        			</dl>
+		        		</div>
+		        		<div class="itemBtn">
+		        			<input type="button" value="电脑哼唧"><span></span>
+		        			<input type="button" value="电脑哼唧"><span></span>
+		        		</div>
+	        		</div>
+	        	</div>
+	        	<!-- shopNav -->
+	        	<div class="shopNav">
+	        		<ul>
+	        			<li><a href="" class="shopNav_actived">数码城</a></li>
+	        			<li><a href="">数码城</a></li>
+	        			<li><a href="">数码城</a></li>
+	        			<li><a href="">数码城</a></li>
+	        			<li><a href="">数码城</a></li>
+	        			<li><a href="">数码城</a></li>
+	        		</ul>
+	        	</div>
+	        </div>
+        </div>
+    </div>
+	<div class="banner comWidth">
+		<div class="bannerImg">
+			<ul class="imgBox clearfloat">
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+			</ul>
+			<div class="imgNum">
+				<a href=""></a><a href="" class="active"></a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>

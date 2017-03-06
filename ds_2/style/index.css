@@ -1,0 +1,366 @@
+/*
+学习一
+banner的制作 position overflow ul li 
+学习二
+下拉菜单的制作 position absolute relative
+学习三
+dl dt dd 的使用
+学习四
+span i a 利用他们制作小图标的方法 display width heigth
+学习五
+input的默认样式的重置 border padding
+学习六
+class的命名规则 bar nav item list title left right
+学习七
+当前项样式的制作 .active{}
+学习八
+一些公共样式的利用 以前没这个意识
+学习九
+代码规范，注释的必须性
+学习十
+页面整体模块的分析和划分
+学习十一
+图片的命名，用当前的class icon文件夹 banner文件夹
+*/
+
+/*公共部分*/
+.comWidth {width: 1000px; margin: 0 auto; }
+.leftArea {float: left;}
+.rightArea	{float: right;}
+.show {display: block;}
+.hide {display: none;}
+
+
+/*header*/
+.headerTop {
+	height: 30px;
+	font-size: 12px;
+	font-family: 宋体;
+	line-height: 30px;
+}
+
+/*headerTop 收藏本站*/
+.headerTop a {
+	color: #666;
+}
+.topLeft {
+	float: left;
+}
+.topLeft span{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: url("../images/star.png") no-repeat 0 0;
+	vertical-align: text-top;
+
+}
+.topRight {
+	float: right;
+}
+
+/*headerMid logo*/
+.headerMid {
+	height: 86px;
+	background-color: #1d7ad9;
+}
+.midLogo {
+	width: 112px;
+	height: 59px;
+	background: url("../images/midLogo.png") no-repeat 0 0;
+	margin: 14px 0 0 39px;
+	float: left;
+}
+.midSearch {
+	width: 432px;
+	height: 36px;
+	padding: 25px 0 0 185px;
+	float: left;
+}
+.midSearch-text {	/*Input的破人样式很烦人*/
+	width: 352px;
+	height: 36px;
+	padding: 0 5px;
+	font-size: 18px;
+}
+.midSearch-btn {	/*Input的破人样式很烦人*/
+	width: 70px;
+	height: 36px;
+	margin-left: -6px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 2px;
+	background-color: #ff8c00;
+	/*默认是baseline对齐，所以更改text的font-size后，btn会下移，这时候要改垂直对齐方式*/
+	vertical-align: bottom;
+}
+.midShop {
+	float: left;
+}
+.midShop {
+	padding: 25px 0 0 32px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 36px;
+}
+.shopCar {
+	width: 86px;
+	height: 36px;
+	background-color: #ff8c00;
+	text-align: center;
+	float: left;
+}
+.shopCar a {
+	display: inline-block;
+	width: 22px;
+	height: 20px;
+	background: url("../images/shopCar.png") no-repeat 0 0;
+	/*middle top bottom: 此处是针对line-height说的  也就是div的height*/
+	vertical-align: text-bottom;
+}
+.shopNum {
+	width: 56px;
+	height: 36px;
+	border-left: 2px solid #e27a00;
+	background-color: #ff8c00;
+	text-align: center;
+	color: #fff;
+	float: left;
+}
+.shopNum a {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url("../images/shopNum.png") no-repeat 0 0;
+	vertical-align: middle;
+}
+
+/*headerBot 商品分类*/
+.headerBot {
+	height: 35px;
+	background-color: #1369c0;
+}
+
+.shopList {
+	width: 189px;
+	float: left;
+	position: relative;
+}
+
+.listTil {
+	width: 100%;
+	height: 35px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	line-height: 35px;
+	text-align: center;
+}
+.listTil a {
+	color: #fff;
+}
+
+.listTil span {
+	display: inline-block;
+	width: 11px;
+	height: 7px;
+	vertical-align: middle;
+	background: url("../images/listTil.png") no-repeat 0 0;
+	margin-left: 12px;
+}
+
+/*商品分类 下拉菜单*/
+.listItem {
+	position: absolute;
+	left: 0;
+	top: 35px;
+	width: 100%;
+}
+.listItems  {
+	padding: 13px 11px;
+	background-color: #4593fd;
+	border-bottom: 1px solid #3487f2;
+}
+
+.listItems dt {
+	width: 100%;
+	line-height: 18px;
+}
+
+.listItems dt a {
+	height: 18px;
+	color: #fff;
+	font-size: 14px;
+	font-family: 微软雅黑;
+	line-height: 18px;
+	font-weight: bolder;
+	padding-right: 6px;
+	float: left;
+}
+.listItems dt span {
+	display: inline-block;
+	width: 5px;
+	height: 8px;
+	background: url("../images/listItem.png") no-repeat 0 0;
+	margin-top: 6px;
+	float: right;
+}
+.listItems dt a:hover {
+	text-decoration: underline;
+
+}
+.listItems dd {
+	width: 100%;
+}
+
+.listItems dd a {
+	height: 18px;
+	color: #fff;
+	font-size: 12px;
+	font-family: 微软雅黑;
+	line-height: 18px;
+	padding-right: 6px;
+
+}
+
+.listItems dd a:hover {
+	text-decoration: underline;
+
+}
+
+/*listItems_avtived 选中状态*/
+.listItems_avtived {
+	background-color: #fff;
+	border-right: 1px solid #3487f2;
+	border-left: 1px solid #3487f2;
+}
+.listItems_avtived dt a {
+	color: #000;
+}
+.listItems_avtived dd a {
+	color: #000;
+}
+
+/*shopNav 导航*/
+.shopNav{
+	float: left;
+}
+
+.shopNav a {
+	padding: 11px 33px;
+	color: #fff;
+	font-family: 微软雅黑;
+	font-size: 13px;
+	line-height: 13px;
+} 
+
+.shopNav_actived {
+	background-color: #4593fd;
+}
+
+/*二级下拉菜单*/
+.big-itemItem {
+	padding: 0 19px;
+	position: absolute;
+	top: 35px;
+	left: 189px;
+	z-index: 2;
+}
+.itemItem {
+}
+.itemItem dl {
+	border-bottom: 1px solid #ccc;
+}
+.itemItem dt {
+	width: 57px;
+	padding: 13px 0;
+	text-align: right;
+}
+.itemItem dt a {
+	color: #4b88da;
+	font-family: 宋体;
+	font-size: 12px;  /* w为什么字体大小是12px 显示却是15px*/
+	line-height: 12px;
+	font-weight: bolder;
+}
+.itemItem dd {
+	width: 474px;
+	padding: 13px 0;
+	margin-left: 57px;
+	margin-top: -48px;
+}
+.itemItem dd a {
+	color: #666;
+	font-family: 宋体;
+	font-size: 12px;
+	padding-left: 13px;
+}
+.itemItem dd a:hover {
+	color: #ff8c00;
+}
+.itemBtn {
+	padding: 15px 0px;
+	border-bottom: 1px solid #ccc;
+}
+.itemBtn input {
+	height: 28px;
+	color: #fff;
+	font-family: 宋体;
+	font-size: 14px;
+	line-height: 28px;
+	padding-left: 8px;
+	padding-right: 12px;
+	background-color: #2785e6;
+	margin-left: 4px;
+}
+.itemBtn span {
+	display: inline-block;
+	width: 5px;
+	height: 8px;
+	background: url("../images/itemBtn.png") no-repeat 0 0;
+	margin-left: -10px;
+}
+
+/*banner*/
+.banner {
+	margin-top: 18px;
+}
+.bannerImg {
+	width: 810px;
+	height: 326px;
+	margin-left: 189px;
+	position: relative;
+	overflow: hidden;  /*隐藏第二张图片*/
+}
+.imgBox {
+	width: 1620px;  /*li浮动后第二张图还在下面 是因为父级宽度不够*/
+	height: 326px;
+	position: absolute;  /*动起来要用绝对定位*/
+	left: 0;
+	top: 0;
+}
+.imgBox a {
+	display: inline-block;
+	width: 810px;
+	height: 326px;
+	background: url("../images/bannerImg.png") no-repeat 0 0;
+}
+.imgNum{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 15px;
+	text-align: center;
+}
+.imgNum a {
+	display: inline-block;
+	width: 20px;
+	height: 6px;
+	background-color: #fff;
+	margin: 0 3px;
+}
+.imgNum .active {  /*active要放在父级元素下才有效  不知道为什么*/
+	display: inline-block;
+	width: 20px;
+	height: 6px;
+	background-color: #ff7700;
+	margin: 0 3px;
+}
